@@ -18,11 +18,11 @@ saturnd.o: src/saturnd.c
 common.o: src/common.c
 	$(PROG) -c src/common.c
 
-client-request.o: src/client-request.c
-	$(PROG) -c src/client-request.c
+client-request.o: src/cassini/client-request.c
+	$(PROG) -c src/cassini/client-request.c
 
-client-reply.o: src/client-reply.c
-	$(PROG) -c src/client-reply.c
+client-reply.o: src/cassini/client-reply.c
+	$(PROG) -c src/cassini/client-reply.c
 	
 timing-text-io.o: src/timing-text-io.c
 	$(PROG) -c src/timing-text-io.c -o timing-text-io.o
