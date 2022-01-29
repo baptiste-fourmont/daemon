@@ -15,8 +15,8 @@ cassini.o: src/cassini.c
 saturnd.o: src/saturnd.c
 	$(PROG) -c src/saturnd.c
 
-common.o: src/common.c
-	$(PROG) -c src/common.c
+common.o: src/util/common.c
+	$(PROG) -c src/util/common.c
 
 client-request.o: src/cassini/client-request.c
 	$(PROG) -c src/cassini/client-request.c
@@ -24,8 +24,8 @@ client-request.o: src/cassini/client-request.c
 client-reply.o: src/cassini/client-reply.c
 	$(PROG) -c src/cassini/client-reply.c
 	
-timing-text-io.o: src/timing-text-io.c
-	$(PROG) -c src/timing-text-io.c -o timing-text-io.o
+timing-text-io.o: src/util/timing-text-io.c
+	$(PROG) -c src/util/timing-text-io.c -o timing-text-io.o
 
 launch:
 	./saturnd
